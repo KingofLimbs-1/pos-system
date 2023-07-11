@@ -1,3 +1,12 @@
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.heading h1{
+    color: red;
+}
+
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
