@@ -5,14 +5,16 @@ class MenuItem
 
     // fields
     private $name;
-    private $price;
+    private $newPrice;
+    private $oldPrice;
     private $barcode;
 
     // constructor
-    public function __construct($name, $price, $barcode)
+    public function __construct($name, $newPrice, $oldPrice, $barcode)
     {
         $this->name = $name;
-        $this->price = $price;
+        $this->newPrice = $newPrice;
+        $this->oldPrice = $oldPrice;
         $this->barcode = $barcode;
     }
 
@@ -22,9 +24,14 @@ class MenuItem
         return $this->name;
     }
 
-    public function getPrice()
+    public function getNewPrice()
     {
-        return $this->price;
+        return $this->newPrice;
+    }
+
+    public function getOldPrice()
+    {
+        return $this->oldPrice;
     }
 
     public function getBarcode()
@@ -32,4 +39,3 @@ class MenuItem
         return $this->barcode;
     }
 }
-

@@ -4,51 +4,56 @@ session_start();
 $items = [
     [
         "name" => "LG TV",
-        "price" => 100,
+        "newPrice" => 1000,
+        "oldPrice" => 2000,
         "barcode" => 18367
     ],
     [
         "name" => "Defy Kettle",
-        "price" => 50,
+        "newPrice" => 500,
+        "oldPrice" => 1000,
         "barcode" => 23111
     ],
     [
         "name" => "HiSense Headset",
-        "price" => 80,
+        "newPrice" => 800,
+        "oldPrice" => 1600,
         "barcode" => 14837
     ],
     [
         "name" => "Samsung Microwave",
-        "price" => 100,
+        "newPrice" => 1000,
+        "oldPrice" => 2000,
         "barcode" => 30921
     ],
     [
         "name" => "JVC Home Theatre System",
-        "price" => 70,
+        "newPrice" => 7000,
+        "oldPrice" => 14000,
         "barcode" => 83120
     ],
     [
         "name" => "Radio JVC",
-        "price" => 20,
+        "newPrice" => 200,
+        "oldPrice" => 400,
         "barcode" => 82180
     ],
     [
         "name" => "Samsung Washing Machine",
-        "price" => 270,
+        "newPrice" => 3000,
+        "oldPrice" => 6000,
         "barcode" => 30299
     ],
     [
         "name" => "Telefunken TV",
-        "price" => 70,
+        "newPrice" => 3000,
+        "oldPrice" => 6000,
         "barcode" => 31204
     ],
     [
         "name" => "Philips Air Fryer",
-        "price" => 90,
+        "newPrice" => 900,
+        "oldPrice" => 1800,
         "barcode" => 13204
-    ]
+    ],
 ];
-
-// Session variable conversion
-$_SESSION['items'] = $items;
-// ...
