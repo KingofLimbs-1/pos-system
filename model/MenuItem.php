@@ -7,14 +7,16 @@ class MenuItem
     private $name;
     private $newPrice;
     private $oldPrice;
+    private $src;
     private $barcode;
 
     // constructor
-    public function __construct($name, $newPrice, $oldPrice, $barcode)
+    public function __construct($name, $newPrice, $oldPrice, $src, $barcode)
     {
         $this->name = $name;
         $this->newPrice = $newPrice;
         $this->oldPrice = $oldPrice;
+        $this->src = $src;
         $this->barcode = $barcode;
     }
 
@@ -32,6 +34,11 @@ class MenuItem
     public function getOldPrice()
     {
         return $this->oldPrice;
+    }
+
+    public function getImgSrc()
+    {
+        return $this->src;
     }
 
     public function getBarcode()
