@@ -2,6 +2,7 @@
 include '../data/data.php';
 include '../model/MenuItem.php';
 include '../include/addItem.php';
+include '../include/calculateVAT.php';
 ?>
 
 <?php
@@ -57,11 +58,9 @@ if (isset($_SESSION["order"]) && isset($_SESSION["orderTotal"])) {
 
     <h2 class="amounts">
         <?php if (isset($orderTotal)) { ?>
-            Amount: R<span><?php echo $orderTotal; ?></span>
+            Subtotal (excluding VAT):  R<span><?php echo $orderTotal; ?></span>
             <br>
-            Subtotal (excluding VAT):  R<span>0.00</span>
-            <br>
-            Total:  R<span>0.00</span>
+            Total (including VAT):  R<span><?php echo $orderTotal + calculateVAT($orderTotal); ?></span>
         <?php } ?>
     </h2>
 
