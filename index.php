@@ -23,16 +23,6 @@ if (isset($_POST['confirmBtn'])) {
 ?>
 
 <?php
-if (isset($_POST['confirmBtn'])) {
-    if (empty($_SESSION["order"])) {
-        $errors[] = "Please add items to your cart";
-    } else {
-        // ...
-    }
-}
-?>
-
-<?php
 // Check to see if any errors occcured
 if (!empty($errors)) {
     foreach ($errors as $error) {
