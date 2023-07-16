@@ -1,0 +1,49 @@
+/* || GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* || GENERAL STYLING END */
+
+/* || CONTENT */
+.heading {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.purchasedItems {
+  margin: 10px;
+}
+
+.purchasedItems h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.purchasedItems li {
+    font-size: 20px;
+}
+
+.amounts {
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+form button{
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    background-color: #fff;
+}
+/* || CONTENT END */
