@@ -1,13 +1,19 @@
 <?php
+session_start();
+?>
 
-function addItem(MenuItem $menuItem)
+<?php 
+
+function addItem(MenuItem $menuItem, $selectedPrice)
 {
-    // Order array instantiation
     if (!isset($_SESSION["order"])) {
         $_SESSION["order"] = [];
     }
-    // Order population
+    
+    if (!isset($_SESSION["orderTotal"])) {
+        $_SESSION["orderTotal"] = 0;
+    }
+    
     $_SESSION["order"][] = $menuItem;
-    // Order price creation
-    $_SESSION["orderTotal"] += $menuItem->getNewPrice();
+    $_SESSION["orderTotal"] += $selectedPrice;
 }
