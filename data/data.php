@@ -19,7 +19,7 @@ $items = [
         "name" => "HiSense Headset",
         "newPrice" => 800,
         "oldPrice" => 1600,
-        "src" => '../pos-system/static/img/headset.png',
+        "src" => '../pos-system/static/img/headphones.png',
         "barcode" => 14837
     ],
     [
